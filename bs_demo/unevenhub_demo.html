@@ -26,6 +26,15 @@
             .container-fluid{
             padding: 0 40px ;
             }
+            .border-end-lg-1{
+                border-right:solid 1px #ccc
+            }
+            .p-lg{
+                padding: 60px 40px 100px 40px;
+            }
+            .border-end-lg-0{
+                border-right:none !important ;
+            }
         }
 
         @media  screen and (max-width:992px){
@@ -36,12 +45,30 @@
             .item-card:nth-child(2n){
             border-left: 1px solid #ccc;
             }
+            .arrow::after{
+                border-color: #1a1a1a;
+                content: "";
+                display: block;
+                height: 12px;
+                position: absolute;
+                right: 40px;
+                top: calc(50% - 8px);
+                transform: rotate(45deg);
+                width: 12px;
+                border-right: solid 2px #1a1a1a;
+                border-bottom: solid 2px #1a1a1a;
+                right: 1rem;
+            }
         }
         
         .ball{
             width: 0.8rem;
             height: 0.8rem;
-        } 
+        }
+        .s_ball{
+            width: 0.6rem;
+            height: 0.6rem;
+        }
         .fs-7{
             font-size: 0.5rem;
         }
@@ -49,19 +76,10 @@
         /* .container-fluid{
             padding: 0 40px;
         } */
-       .arrow::after{
-        border-color: #1a1a1a;
-        content: "";
-        display: block;
-        height: 12px;
-        position: absolute;
-        right: 40px;
-        top: calc(50% - 8px);
-        transform: rotate(45deg);
-        width: 12px;
-        border-right: solid 2px #1a1a1a;
-        border-bottom: solid 2px #1a1a1a;
-        right: 1rem;
+       
+       .new_in{
+        top:1.5rem;
+        left:1.5rem;
        }
     </style>
 </head>
@@ -360,43 +378,186 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row ">
-                <div class="item_list col-12 col-lg-3 border-bottom">
-                    <div class="row">
-                        <div class="col-6 px-2 py-2  position-relative border-end">
-                            <a class="arrow text-decoration-none text-black" href="">Category</a>
+        <div class="container-fluid px-lg-0">
+            <div class="row mx-lg-0">
+                <div class="item_list col-12 col-lg-3 border-bottom border-end-lg-1">
+                    <div class="row p-lg">
+                        <div class="col-6 px-3 py-2  position-relative border-end border-end-lg-0">
+                            <a class="arrow text-decoration-none text-black fw-bold" href="">Category</a>
                         </div>
-                        <div class="col-6 px-2 py-2  position-relative ">
-                            <a class="arrow text-decoration-none text-black" href="">Brand</a>
+                        <div class="col-6 px-3 py-2  position-relative ">
+                            <a class="arrow text-decoration-none text-black fw-bold" href="">Brand</a>
                         </div>
                     </div>
                 </div>
                 <div class="items col-12 col-lg-9">
                     <div class="product-row row row-cols-2 row-cols-lg-3">
-                        <div class="item-card col py-3 border-bottom">
+                        <div class="item-card col py-3 border-bottom position-relative">
                             <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND1_9b6a3a1a-eb40-4c1a-8316-62e77d961a92.jpg" alt="">
-                            <h6 class=" fw-bold m-0">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
-                            <p class=" text-decoration-underline fs-7">NEEDLES</p>
-                            <p class="fs-7"> ¥23,100</p>
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
                         </div>
-                        <div class="item-card col py-3 border-bottom">
-                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND1_9b6a3a1a-eb40-4c1a-8316-62e77d961a92.jpg" alt="">
-                            <h6 class=" fw-bold m-0">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
-                            <p class=" text-decoration-underline fs-7">NEEDLES</p>
-                            <p class="fs-7"> ¥23,100</p>
+                        
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND3_959dfdc9-54af-4518-9d05-6f87039b247f.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
                         </div>
-                        <div class="item-card col py-3 border-bottom">
+
+                        <div class="item-card col py-3 border-bottom position-relative">
                             <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND1_9b6a3a1a-eb40-4c1a-8316-62e77d961a92.jpg" alt="">
-                            <h6 class=" fw-bold m-0">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
-                            <p class=" text-decoration-underline fs-7">NEEDLES</p>
-                            <p class="fs-7"> ¥23,100</p>
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
                         </div>
-                        <div class="item-card col py-3 border-bottom">
+
+                        <div class="item-card col py-3 border-bottom position-relative">
                             <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND1_9b6a3a1a-eb40-4c1a-8316-62e77d961a92.jpg" alt="">
-                            <h6 class=" fw-bold m-0">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
-                            <p class=" text-decoration-underline fs-7">NEEDLES</p>
-                            <p class="fs-7"> ¥23,100</p>
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND1_9b6a3a1a-eb40-4c1a-8316-62e77d961a92.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+                        
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND3_959dfdc9-54af-4518-9d05-6f87039b247f.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND1_9b6a3a1a-eb40-4c1a-8316-62e77d961a92.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+                        
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND3_959dfdc9-54af-4518-9d05-6f87039b247f.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND1_9b6a3a1a-eb40-4c1a-8316-62e77d961a92.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND1_9b6a3a1a-eb40-4c1a-8316-62e77d961a92.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND1_9b6a3a1a-eb40-4c1a-8316-62e77d961a92.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+                        
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND3_959dfdc9-54af-4518-9d05-6f87039b247f.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
