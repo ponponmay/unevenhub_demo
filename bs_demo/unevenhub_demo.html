@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+       
         @media  screen and (min-width:992px){
             .fs-lg-2{
             font-size: 2rem;}
@@ -16,21 +17,80 @@
             } */
             .event:nth-child(3n+2),.event:nth-child(3n+3){
             border-left: 1px solid #ccc;
+            }
+            .item-card:nth-child(3n+2),.item-card:nth-child(3n+3){
+            border-left: 1px solid #ccc;
+            }
+            main .container-fluid{
+                padding-right:20px ;
+            }
+            .container-fluid{
+            padding: 0 40px ;
+            }
+            .border-end-lg-1{
+                border-right:solid 1px #ccc
+            }
+            .p-lg{
+                padding: 60px 40px 100px 40px;
+            }
+            .border-end-lg-0{
+                border-right:none !important ;
+            }
         }
+
+        @media  screen and (max-width:992px){
+            
+            .container-fluid{
+            /* padding: 0 15px ; */
+            }
+            .item-card:nth-child(2n){
+            border-left: 1px solid #ccc;
+            }
+            .arrow::after{
+                border-color: #1a1a1a;
+                content: "";
+                display: block;
+                height: 12px;
+                position: absolute;
+                right: 40px;
+                top: calc(50% - 8px);
+                transform: rotate(45deg);
+                width: 12px;
+                border-right: solid 2px #1a1a1a;
+                border-bottom: solid 2px #1a1a1a;
+                right: 1rem;
+            }
+            .display-xs-none{
+                display: none;
+            }
         }
-        
+        .item_list_left{
+            position: sticky;
+            top: 0;
+        }
+        .text-decoration-underline , .display-xs-none a{
+            text-underline-offset: 4px;
+        }
         .ball{
             width: 0.8rem;
             height: 0.8rem;
-        } 
+        }
+        .s_ball{
+            width: 0.6rem;
+            height: 0.6rem;
+        }
         .fs-7{
             font-size: 0.5rem;
         }
         
-        .container-fluid{
-            /* padding: 0 2rem; */
-        }
-        
+        /* .container-fluid{
+            padding: 0 40px;
+        } */
+       
+       .new_in{
+        top:1.5rem;
+        left:1.5rem;
+       }
     </style>
 </head>
 <body>
@@ -70,12 +130,12 @@
     </header>
 
     <main class=" border-bottom mb-3 mb-lg-0">
-        <div class="container-fluid px-0">
+        <div class="container-fluid ">
             <div class="row pb-3 mx-0">
-                <div class="col-12 order-lg-2 col-lg-8 mb-2 ">
+                <div class="col-12 order-lg-2 col-lg-8 mb-2 pe-lg-0 px-0 ">
                     <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/monica_mein_new.jpg" alt="">
                 </div>
-                <div class="col-12 order-lg-1 col-lg-4 px-lg-5 ">
+                <div class="col-12 order-lg-1 col-lg-4 ps-lg-0 ps-0 ">
                     <div class="info d-flex justify-content-between pt-lg-4">
                         <p class="mb-0 text-decoration-underline fs-7">Event</p>
                         <div class="date d-flex align-items-center">
@@ -92,14 +152,14 @@
     </main>
 
     <section class="event_item">
-        <div class="container-fluid  ">
+        <div class="container-fluid px-0 px-lg-0 ">
             <div class="row row-cols-1 row-cols-lg-3 mx-0">
                 <div class="event col py-3 border-bottom ">
                     <div class="row">
-                        <div class="col-4 col-lg-12 p-0 px-lg-3 ">
+                        <div class="col-4 col-lg-12  px-lg-3 ">
                             <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/HCS_for_HP.jpg" alt="">
                         </div>
-                        <div class="col-8 col-lg-12 pe-0 px-lg-4">
+                        <div class="col-8 col-lg-12  px-lg-4">
                             <div class="info d-flex justify-content-between pt-lg-4">
                                 <p class="mb-0 text-decoration-underline fs-7">Event</p>
                                 <div class="date d-flex align-items-center">
@@ -117,10 +177,10 @@
 
                 <div class="event col py-3 border-bottom ">
                     <div class="row">
-                        <div class="col-4 col-lg-12 p-0 px-lg-3">
+                        <div class="col-4 col-lg-12  px-lg-3">
                             <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/HCS_for_HP.jpg" alt="">
                         </div>
-                        <div class="col-8 col-lg-12 pe-0 px-lg-4">
+                        <div class="col-8 col-lg-12  px-lg-4">
                             <div class="info d-flex justify-content-between pt-lg-4">
                                 <p class="mb-0 text-decoration-underline fs-7">Event</p>
                                 <div class="date d-flex align-items-center">
@@ -138,10 +198,10 @@
 
                 <div class="event col py-3 border-bottom ">
                     <div class="row">
-                        <div class="col-4 col-lg-12 p-0 px-lg-3">
+                        <div class="col-4 col-lg-12  px-lg-3">
                             <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/HCS_for_HP.jpg" alt="">
                         </div>
-                        <div class="col-8 col-lg-12 pe-0 px-lg-4">
+                        <div class="col-8 col-lg-12  px-lg-4">
                             <div class="info d-flex justify-content-between pt-lg-4">
                                 <p class="mb-0 text-decoration-underline fs-7">Event</p>
                                 <div class="date d-flex align-items-center">
@@ -159,10 +219,10 @@
 
                 <div class="event col py-3 border-bottom ">
                     <div class="row">
-                        <div class="col-4 col-lg-12 p-0 px-lg-3">
+                        <div class="col-4 col-lg-12  px-lg-3">
                             <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/HCS_for_HP.jpg" alt="">
                         </div>
-                        <div class="col-8 col-lg-12 pe-0 px-lg-4">
+                        <div class="col-8 col-lg-12  px-lg-4">
                             <div class="info d-flex justify-content-between pt-lg-4">
                                 <p class="mb-0 text-decoration-underline fs-7">Event</p>
                                 <div class="date d-flex align-items-center">
@@ -180,10 +240,10 @@
 
                 <div class="event col py-3 border-bottom ">
                     <div class="row">
-                        <div class="col-4 col-lg-12 p-0 px-lg-3">
+                        <div class="col-4 col-lg-12  px-lg-3">
                             <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/HCS_for_HP.jpg" alt="">
                         </div>
-                        <div class="col-8 col-lg-12 pe-0 px-lg-4">
+                        <div class="col-8 col-lg-12  px-lg-4">
                             <div class="info d-flex justify-content-between pt-lg-4">
                                 <p class="mb-0 text-decoration-underline fs-7">Event</p>
                                 <div class="date d-flex align-items-center">
@@ -201,10 +261,10 @@
 
                 <div class="event col py-3 border-bottom ">
                     <div class="row">
-                        <div class="col-4 col-lg-12 p-0 px-lg-3">
+                        <div class="col-4 col-lg-12  px-lg-3">
                             <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/HCS_for_HP.jpg" alt="">
                         </div>
-                        <div class="col-8 col-lg-12 pe-0 px-lg-4">
+                        <div class="col-8 col-lg-12  px-lg-4">
                             <div class="info d-flex justify-content-between pt-lg-4">
                                 <p class="mb-0 text-decoration-underline fs-7">Event</p>
                                 <div class="date d-flex align-items-center">
@@ -222,10 +282,10 @@
                 
                 <div class="event col py-3 border-bottom ">
                     <div class="row">
-                        <div class="col-4 col-lg-12 p-0 px-lg-3">
+                        <div class="col-4 col-lg-12  px-lg-3">
                             <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/HCS_for_HP.jpg" alt="">
                         </div>
-                        <div class="col-8 col-lg-12 pe-0 px-lg-4">
+                        <div class="col-8 col-lg-12  px-lg-4">
                             <div class="info d-flex justify-content-between pt-lg-4">
                                 <p class="mb-0 text-decoration-underline fs-7">Event</p>
                                 <div class="date d-flex align-items-center">
@@ -243,10 +303,10 @@
 
                 <div class="event col py-3 border-bottom ">
                     <div class="row">
-                        <div class="col-4 col-lg-12 p-0 px-lg-3">
+                        <div class="col-4 col-lg-12  px-lg-3">
                             <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/HCS_for_HP.jpg" alt="">
                         </div>
-                        <div class="col-8 col-lg-12 pe-0 px-lg-4">
+                        <div class="col-8 col-lg-12  px-lg-4">
                             <div class="info d-flex justify-content-between pt-lg-4">
                                 <p class="mb-0 text-decoration-underline fs-7">Event</p>
                                 <div class="date d-flex align-items-center">
@@ -264,10 +324,10 @@
 
                 <div class="event col py-3 border-bottom ">
                     <div class="row">
-                        <div class="col-4 col-lg-12 p-0 px-lg-3">
+                        <div class="col-4 col-lg-12  px-lg-3">
                             <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/HCS_for_HP.jpg" alt="">
                         </div>
-                        <div class="col-8 col-lg-12 pe-0 px-lg-4">
+                        <div class="col-8 col-lg-12  px-lg-4">
                             <div class="info d-flex justify-content-between pt-lg-4">
                                 <p class="mb-0 text-decoration-underline fs-7">Event</p>
                                 <div class="date d-flex align-items-center">
@@ -291,38 +351,276 @@
 
     <section class="nav_bar mb-5">
 
-        <div class="container-fluid">
+        <div class="container-fluid border-bottom">
             <div class="row">
-                <div class="col-12  justify-content-center py-3 ">
+                <div class="col-12 d-flex justify-content-center py-3 ">
                     <a class="px-3  py-1 me-2 bg-black fs-7 text-white text-decoration-none rounded-pill" href="">Feature</a>
                     <a class="px-3  py-1 me-2 bg-black fs-7 text-white text-decoration-none rounded-pill" href="">Information</a>
                     <a class="px-3  py-1 me-2 bg-black fs-7 text-white text-decoration-none rounded-pill" href="">Life Style</a>
                     <a class="px-3  py-1  bg-black fs-7 text-white text-decoration-none rounded-pill" href="">News</a>
                 </div>
-                <div class="col-12  justify-content-center py-3">
-                    <a class="px-3 py-1 border rounded-pill me-3 fs-7 text-decoration-none text-black fw-bold" href="">Journal</a>
-                    <a class="px-3 py-1 border rounded-pill me-3 fs-7 text-decoration-none text-black fw-bold" href="">Event</a>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12  d-flex justify-content-center py-3">
+                            <a class="px-3 py-1 border rounded-pill me-3 fs-7 text-decoration-none text-black fw-bold" href="">Journal</a>
+                            <a class="px-3 py-1 border rounded-pill me-3 fs-7 text-decoration-none text-black fw-bold" href="">Event</a>
                 </div>
             </div>
         </div>
+            
+        
     </section>
 
     <section class="online_store">
-        <div class="container-fluid ">
+        <div class="container-fluid border-bottom">
             <div class="row ">
                 <div class="col">
                     <h1>ONLINE STORE</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <p>￥11,000（税込）以上のお買い上げで送料が無料</p>
+        </div>
+        <div class="container-fluid border-bottom">
+            <div class="row ">
+                <div class="col py-2">
+                        <p class="text-center m-0 fs-7">￥11,000（税込）以上のお買い上げで送料が無料</p>
                 </div>
+            </div>
+        </div>
+        <div class="container-fluid px-lg-0 overflow-scroll position-relative">
+            <div class="row mx-lg-0">
+                <div class="item_list_left col-12 col-lg-3 border-bottom border-end-lg-1 align-items-start">
+                    <div class="row p-lg">
+                        <div class="col-6 px-3 py-2  position-relative border-end border-end-lg-0">
+                            <div class="arrow  text-black fw-bold fs-5">Category</div>
+                            <ul class="display-xs-none p-0 mt-5">
+                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Outer & Jacket</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Shirts</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Sweat & T-Shirts</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Knit Wear</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Bottoms</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Vest</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Onepiece & Skirt</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Shoes</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Accessories</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Jewelry</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Vintage</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Objects & Home</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Others</a></li>
+                            </ul>
+                            <ul class="display-xs-none p-0 mt-5">
+                                <li class="list-unstyled py-1"><a class="  text-black " href="">MEN</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black " href="">WOMEN</a></li>
+                            </ul>
+                            <ul class="display-xs-none p-0 mt-5">
+                                <li class="list-unstyled py-1"><a class="  text-black " href="">NEW</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black " href="">SALE</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 px-3 py-2  position-relative ">
+                            <div class="arrow  text-black fw-bold fs-5" >Brand</div>
+                            <ul class="display-xs-none p-0 mt-5">
+                                <li class="list-unstyled py-1"><a class="  text-black  " href="">AiE</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black  " href="">atelier rei</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black  " href="">BEAUGAN</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black  " href="">MASU</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black  " href="">MIDORIKAWA</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black  " href="">Monica Castiglioni</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black  " href="">MOUNTAIN RESEARCH</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black  " href="">NEEDLES</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black  " href="">SASQUATCHfabrix.</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black  " href="">SOUTH2 WEST8</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black  " href="">TODAY edition</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black  " href="">UNUSED</a></li>
+                            </ul>
+                            <ul class="display-xs-none p-0 mt-5">
+                                <li class="list-unstyled py-1"><a class="  text-black " href="">OTHER</a></li>
+                            </ul>
+                            <ul class="display-xs-none p-0 mt-5">
+                                <li class="list-unstyled py-1"><a class="  text-black " href="">BATHHOUSE</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="items col-12 col-lg-9">
+                    <div class="product-row row row-cols-2 row-cols-lg-3">
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND1_9b6a3a1a-eb40-4c1a-8316-62e77d961a92.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+                        
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND3_959dfdc9-54af-4518-9d05-6f87039b247f.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND1_9b6a3a1a-eb40-4c1a-8316-62e77d961a92.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND1_9b6a3a1a-eb40-4c1a-8316-62e77d961a92.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND1_9b6a3a1a-eb40-4c1a-8316-62e77d961a92.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+                        
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND3_959dfdc9-54af-4518-9d05-6f87039b247f.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND1_9b6a3a1a-eb40-4c1a-8316-62e77d961a92.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+                        
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND3_959dfdc9-54af-4518-9d05-6f87039b247f.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND1_9b6a3a1a-eb40-4c1a-8316-62e77d961a92.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND1_9b6a3a1a-eb40-4c1a-8316-62e77d961a92.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND1_9b6a3a1a-eb40-4c1a-8316-62e77d961a92.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+                        
+                        <div class="item-card col py-3 border-bottom position-relative">
+                            <img class="w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/ND3_959dfdc9-54af-4518-9d05-6f87039b247f.jpg" alt="">
+                            
+                            <h6 class=" fw-bold m-0 mt-1">H.D. TRACK PANT - POLY SMOOTH（EMERALD）</h6>
+                            <p class=" text-decoration-underline fs-7 ">NEEDLES</p>
+                            <p class="fs-7 mb-0"> ¥23,100</p>
+                            
+                            <div class="new_in d-flex align-items-center position-absolute ">
+                                <div class="s_ball rounded rounded-circle bg-black me-1"></div>
+                                <p class="fs-7 m-0">NEW</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+                
+                
             </div>
             <div class="row"></div>
             <div class="row"></div>
-            <div class="row"></div>
-        </div>
+        
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
