@@ -40,13 +40,40 @@
             .border-end-lg-0{
                 border-right:none !important ;
             }
+            .flex-direction-lg-column{
+                flex-direction: column;
+            }
+            .footer_outline{
+                flex:0 1 400px;
+            }
+            .footer_nav{
+                flex:0 1 330px;
+            }
+            .footer_service{
+                flex:0 1 260px;
+            }
+            .mb-lg-100{
+                margin-bottom: 200px;
+            }
+            .footer_service::before{
+                background-color: #ccc;
+                content: "";
+                display: block;
+                height: 100%;
+                left: 0px;
+                position: absolute;
+                top: 0;
+                width: 1px;
+            }
+            footer{
+                position: sticky;
+                bottom: 0;
+                z-index: -1;
+            }
         }
 
         @media  screen and (max-width:992px){
             
-            .container-fluid{
-            /* padding: 0 15px ; */
-            }
             .item-card:nth-child(2n){
             border-left: 1px solid #ccc;
             }
@@ -73,7 +100,16 @@
                 left: calc(50% - 50px);
                 position: absolute;
                 bottom: 0;
+            }
+            .flex-direction-sm-row{
+                flex-direction: column;
+            }
+            .max-width-sm-480{
+                max-width: 480px;
+            }
 
+            .column-sm-2{
+                column-count: 2;
             }
         }
         /* .item_list_left{
@@ -94,6 +130,9 @@
         .fs-7 , p{
             font-size: 0.5rem;
         }
+        .fs-65{
+            font-size:13px;
+        }
         
         /* .container-fluid{
             padding: 0 40px;
@@ -106,9 +145,7 @@
        .pt-100{
         padding-top: 100px;
        }
-       .max-w-480{
-        max-width: 480px;
-       }
+       
        .circlebutton{
         width: 30px;
         height: 30px;
@@ -118,14 +155,42 @@
         height: 200px;
         
        }
-       .column-2{
-        column-count: 2;
+       
+       .back_to_top{
+        width: 50px;
+        height: 50px;
        }
+
+
+       .back_to_top::before{
+        content: "";
+        border: solid 1px #1a1a1a ;
+        width: 100%;
+        height: 1px;
+        display: block;
+        position: absolute;
+       }
+       .back_to_top::after{
+        content: "";
+        border: solid  #1a1a1a ;
+        width: 38px;
+        height: 38px;
+        display: block;
+        transform: translate(0) rotate(-45deg);
+        border-width: 1px 1px 0 0;
+        top: 15px ;
+        left: calc(50% - 19px);
+        position: absolute;
+       }
+       .word-break-break-all{
+        word-break: break-all;
+       }
+
 
     </style>
 </head>
 <body>
-    <header class="border-bottom pb-3 mb-3">
+    <header class="border-bottom pb-3 mb-3 bg-white">
         <div class="container-fluid mt-3">
             <div class="row mb-lg-3">
                 <h1>
@@ -160,7 +225,7 @@
         </div>
     </header>
 
-    <main class=" border-bottom mb-3 mb-lg-0">
+    <main class=" border-bottom mb-3 mb-lg-0 bg-white">
         <div class="container-fluid ">
             <div class="row pb-3 mx-0">
                 <div class="col-12 order-lg-2 col-lg-8 mb-2 pe-lg-0 px-0 ">
@@ -182,7 +247,7 @@
         </div>
     </main>
 
-    <section class="event_item">
+    <section class="event_item bg-white">
         <div class="container-fluid px-0 px-lg-0 ">
             <div class="row row-cols-1 row-cols-lg-3 mx-0">
                 <div class="event col py-3 border-bottom ">
@@ -380,7 +445,7 @@
         </div>
     </section>
 
-    <section class="nav_bar mb-5">
+    <section class="nav_bar mb-5 bg-white">
 
         <div class="container-fluid border-bottom">
             <div class="row">
@@ -404,7 +469,7 @@
         
     </section>
 
-    <section class="online_store mb-5">
+    <section class="online_store mb-5 bg-white">
         <div class="container-fluid border-bottom">
             <div class="row ">
                 <div class="col">
@@ -423,53 +488,53 @@
             <div class="row mx-lg-0 ">
                 <div class="item_list_left col-12 col-lg-3 border-bottom border-end-lg-1 ">
                     <div class="row p-lg position-sticky top-0">
-                        <div class="col-6 px-3 py-2  position-relative border-end border-end-lg-0">
+                        <div class="col-6 ps-0 pe-3 py-2  position-relative border-end border-end-lg-0">
                             <div class="arrow  text-black fw-bold fs-5">Category</div>
                             <ul class="d-none d-lg-block p-0 mt-5">
-                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Outer & Jacket</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Shirts</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Sweat & T-Shirts</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Knit Wear</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Bottoms</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Vest</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Onepiece & Skirt</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Shoes</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Accessories</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Jewelry</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Vintage</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Objects & Home</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black   " href="">Others</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7   " href="">Outer & Jacket</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7   " href="">Shirts</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7   " href="">Sweat & T-Shirts</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7   " href="">Knit Wear</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7   " href="">Bottoms</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7   " href="">Vest</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7   " href="">Onepiece & Skirt</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7   " href="">Shoes</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7   " href="">Accessories</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7   " href="">Jewelry</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7   " href="">Vintage</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7   " href="">Objects & Home</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7   " href="">Others</a></li>
                             </ul>
                             <ul class="d-none d-lg-block p-0 mt-5">
-                                <li class="list-unstyled py-1"><a class="  text-black " href="">MEN</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black " href="">WOMEN</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7 " href="">MEN</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7 " href="">WOMEN</a></li>
                             </ul>
                             <ul class="d-none d-lg-block p-0 mt-5">
-                                <li class="list-unstyled py-1"><a class="  text-black " href="">NEW</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black " href="">SALE</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7 " href="">NEW</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7 " href="">SALE</a></li>
                             </ul>
                         </div>
-                        <div class="col-6 px-3 py-2  position-relative ">
-                            <div class="arrow  text-black fw-bold fs-5" >Brand</div>
+                        <div class="col-6 ps-3 pe-0 py-2  position-relative ">
+                            <div class="arrow  text-black  fw-bold fs-5" >Brand</div>
                             <ul class="d-none d-lg-block p-0 mt-5">
-                                <li class="list-unstyled py-1"><a class="  text-black  " href="">AiE</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black  " href="">atelier rei</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black  " href="">BEAUGAN</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black  " href="">MASU</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black  " href="">MIDORIKAWA</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black  " href="">Monica Castiglioni</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black  " href="">MOUNTAIN RESEARCH</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black  " href="">NEEDLES</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black  " href="">SASQUATCHfabrix.</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black  " href="">SOUTH2 WEST8</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black  " href="">TODAY edition</a></li>
-                                <li class="list-unstyled py-1"><a class="  text-black  " href="">UNUSED</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7  " href="">AiE</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7  " href="">atelier rei</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7  " href="">BEAUGAN</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7  " href="">MASU</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7  " href="">MIDORIKAWA</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7  " href="">Monica Castiglioni</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7  " href="">MOUNTAIN RESEARCH</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7  " href="">NEEDLES</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7 word-break-break-all " href="">SASQUATCHfabrix.</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7  " href="">SOUTH2 WEST8</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7  " href="">TODAY edition</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7  " href="">UNUSED</a></li>
                             </ul>
                             <ul class="d-none d-lg-block p-0 mt-5">
-                                <li class="list-unstyled py-1"><a class="  text-black " href="">OTHER</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7 " href="">OTHER</a></li>
                             </ul>
                             <ul class="d-none d-lg-block p-0 mt-5">
-                                <li class="list-unstyled py-1"><a class="  text-black " href="">BATHHOUSE</a></li>
+                                <li class="list-unstyled py-1"><a class="  text-black fs-7 " href="">BATHHOUSE</a></li>
                             </ul>
                         </div>
                     </div>
@@ -652,7 +717,7 @@
         </div>  
     </section>
 
-    <section class="shop_and_space mb-5">
+    <section class="shop_and_space mb-5 bg-white">
         <div class="container-fluid border-bottom mb-3 ">
             <div class="row ">
                 <div class="col">
@@ -844,10 +909,10 @@
 
     <footer class=" bg-light">
         <div class="container-fluid ">
-            <div class="row row-cols-1 row-cols-lg-3 pt-100 max-w-480 mx-auto">
-                <div class="col mb-5">
+            <div class="row row-cols-1 pt-100 mb-lg-100 max-width-sm-480 mx-auto ">
+                <div class="footer_outline col mb-5 mb-lg-0 d-flex flex-direction-sm-row flex-direction-lg-column justify-content-between me-lg-auto">
                     <a  href="">
-                        <img height="50" class="mb-5" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/storeinfo_name_hubstore.png" alt="">
+                        <img height="50"  class="mb-5 w-100" src="images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/storeinfo_name_hubstore.png" alt="">
                     </a>
                     <p class="footer__outline__info">
 						〒451-0021<br>
@@ -864,15 +929,15 @@
                             <img class=" position-absolute top-50 start-50 translate-middle " src="//cdn.shopify.com/s/files/1/0667/9127/6834/t/2/assets/icon_instagram.png?v=130835556881346904001667977793" width="15" height="15" alt="Instagram"></a>
 					</div>
                 </div>
-                <div class="col mb-5  h-200px flex-wrap border-bottom-short position-relative">
-                    <nav class="mb-3">
-                        <a href="" class=" text-black text-decoration-none me-3 fw-bold fs-6 d-none d-lg-inline">Top</a>
-                        <a href="" class=" text-black text-decoration-none me-3 fw-bold fs-6">Online Store</a>
-                        <a href="" class=" text-black text-decoration-none me-3 fw-bold fs-6">Journal</a>
-                        <a href="" class=" text-black text-decoration-none me-3 fw-bold fs-6">Event</a>
-                        <a href="" class=" text-black text-decoration-none  fw-bold fs-6">About Us</a>
+                <div class="footer_nav col pb-5 pb-lg-0 mb-lg-0 h-200px  border-bottom-short position-relative d-flex flex-direction-sm-row flex-direction-lg-column justify-content-between">
+                    <nav class="mb-3 d-flex">
+                
+                        <a href="" class=" text-black text-decoration-none me-3 fw-bold fs-65">Online Store</a>
+                        <a href="" class=" text-black text-decoration-none me-3 fw-bold fs-65">Journal</a>
+                        <a href="" class=" text-black text-decoration-none me-3 fw-bold fs-65">Event</a>
+                        <a href="" class=" text-black text-decoration-none  fw-bold fs-65">About Us</a>
                     </nav>
-                    <ul class="column-2 fs-7 mb-4 list-unstyled">
+                    <ul class="column-sm-2 fs-7 mb-4 list-unstyled">
                         <li><a class=" text-decoration-none text-black-50 fw-bold" href="/pages/guide">商品について</a></li>
                         <li><a class=" text-decoration-none text-black-50 fw-bold" href="/pages/guide#order">注文について</a></li>
                         <li><a class=" text-decoration-none text-black-50 fw-bold" href="/pages/guide#payment">お支払について</a></li>
@@ -885,19 +950,44 @@
                         <li><a class=" text-decoration-none text-black-50 fw-bold" href="/pages/contact">お問い合わせ</a></li>
                     </ul>
                     <div>
-                        <a class="px-3 py-2 border rounded-pill text-decoration-none text-black fw-bold" href="">Log In</a>
+                        <a class="px-3 py-2 border rounded-pill text-decoration-none text-black fw-bold fs-7" href="">Log In</a>
                     </div>
                 </div>
-                <div class="col mb-5">
-                    <h3>Line Customer Service</h3>
+                <div class="footer_service col pt-5 pt-lg-0 mb-5 mb-lg-0 d-flex flex-direction-sm-row flex-direction-lg-column justify-content-between position-relative">
+                    <h6 class="fw-blod">Line Customer Service</h6>
                     <p>
 						気になった商品を、商品取扱い店舗のスタッフがオンラインでお話しさせて頂きます。「LINE」のビデオ通話、又はメッセージを利用します。<br>
 						<br>
 						アカウントを友だち追加して「オンライン接客希望」とメッセージを送信してください。
 					</p>
                     <div>
-                        <a href="https://lin.ee/3hX9Swh" target="_blank" class="footer__service__links__link circlebutton"><img src="//cdn.shopify.com/s/files/1/0667/9127/6834/t/2/assets/icon_line.png?v=87546271397380831431667977792" width="20" height="20" alt="LINE"></a>
+                        <a href="https://lin.ee/3hX9Swh" target="_blank" class=" position-relative border rounded-circle circlebutton">
+                            <img src="//cdn.shopify.com/s/files/1/0667/9127/6834/t/2/assets/icon_line.png?v=87546271397380831431667977792" width="18" height="18" alt="LINE"  class="position-absolute top-50 start-50 translate-middle" >
+                        </a>
                     </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-3   mx-auto">
+                <div class="col d-flex justify-content-center order-lg-3 pb-3">
+                    <div class="pay_item me-2"> <img src="./images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/pay_shoppay.png" height="20" alt="">
+                    </div>
+                    <div class="pay_item me-2">
+                        <img src="./images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/pay_apple.png" height="20" alt="">
+                    </div>
+                    <div class="pay_item me-2">
+                        <img src="./images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/pay_google.png" height="20" alt="">
+                    </div>
+                    <div class="pay_item">
+                        <img src="./images/UNEVEN HUB STORE ｜想像を超える、人とモノのハブ体験_files/pay_amazon.png" height="20" alt="">
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center order-lg-1 pb-3">
+                    <p>© UNEVEN HUB STORE</p>
+                </div>
+                <div class="col d-flex justify-content-center order-lg-2 pb-3">
+                    <a class="back_to_top position-relative" href="">
+
+                    </a>
                 </div>
             </div>
         </div>
